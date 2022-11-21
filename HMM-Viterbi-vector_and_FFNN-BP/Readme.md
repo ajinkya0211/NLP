@@ -10,21 +10,21 @@
 
 ## Part 1
 
-Given a sequence of words, produce the POS tag sequence 
-Technique to be used: HMM-Viterbi-vector (vector based; the whole corpus is corpus of word vectors which replace words)
-Use Universal Tag Set (12 in number);
-<ADJ, ADP, ., NOUN, CONJ, NUM, PRT, ADV, X, VERB, PRON, DET>
-5-fold cross validation
-Compare with HMM-Viterbi-symbolic 
+Given a sequence of words, produce the POS tag sequence  
+Technique to be used: HMM-Viterbi-vector (vector based; the whole corpus is corpus of word vectors which replace words)  
+Use Universal Tag Set (12 in number);  
+<ADJ, ADP, ., NOUN, CONJ, NUM, PRT, ADV, X, VERB, PRON, DET>  
+5-fold cross validation  
+Compare with HMM-Viterbi-symbolic   
 
 ## Part 2
 
-Given a sequence of words, produce the POS tag sequence
-Technique to be used: word2vec vectors, FFNN and BP (a slide on FFNN-BP architecture is a must)
-Use Universal Tag Set (12 in number);
-<ADJ, ADP, ., NOUN, CONJ, NUM, PRT, ADV, X, VERB, PRON, DET>
-5-fold cross validation
-Compare with HMM-Viterbi-symbolic
+Given a sequence of words, produce the POS tag sequence  
+Technique to be used: word2vec vectors, FFNN and BP (a slide on FFNN-BP architecture is a must)  
+Use Universal Tag Set (12 in number);  
+<ADJ, ADP, ., NOUN, CONJ, NUM, PRT, ADV, X, VERB, PRON, DET>  
+5-fold cross validation  
+Compare with HMM-Viterbi-symbolic  
 
 ### FFNN-BP Architecture
 ![image](https://user-images.githubusercontent.com/89626355/203066018-6f1b85de-7a1b-4f58-bc96-cc99f9e5144f.png)
@@ -53,5 +53,5 @@ Compare with HMM-Viterbi-symbolic
 
 ### Data Processing and Data Sparsity
 
-To obtain the word vectors we used the Glove embedding lookup file given on https://github.com/stanfordnlp/GloVe
+To obtain the word vectors we used the Glove embedding lookup file given on https://github.com/stanfordnlp/GloVe  
 For solving the problem of unseen words we use cosine similarity of vector In 1st method HMM-Viterbi Vector

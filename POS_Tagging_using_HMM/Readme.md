@@ -8,6 +8,20 @@
 
 ## ________________________________DESCRIPTION________________________________
 
+
+### Problem statement
+
+Given a sequence of words, produce the POS tag sequence
+
+Technique to be used: HMM-Viterbi
+
+Use Universal Tag Set (12 in number)
+
+5-fold cross validation 
+
+<ADJ, ADP, ., NOUN, CONJ, NUM, PRT, ADV, X, VERB, PRON, DET>
+
+
 ### Importing libraries
 
 The libraries used are:
@@ -72,6 +86,12 @@ Extra delimiter has been introduced before punctuation marks to tackle the error
 
 Confusion matrix (Interpretation and error analysis):
 I then derive the confusion matrix using prediction function and it has been plotted as a heatmap for better visualization.
+
+#### Confusion Matrix (12 X 12)
+![image](https://user-images.githubusercontent.com/89626355/203062891-deedc6ae-3267-4fb0-bf33-060230a98034.png)
+
+#### Interpretation of confusion (error analysis)
+
 Given that the actual tag is X, the probability that it has been misclassified as a NOUN is maximum, 0.306.
 Also, from the confusion matrix of X and NOUN, the error in classification is obtained as 0.0021.
 Reason: 
@@ -81,6 +101,13 @@ Therefore, the probability of a word being tagged as a noun is the highest by th
 Hence, most of the words which are to be tagged X in actual is being tagged as a NOUN
 
 5-fold-cross validation is used to quantitatively measure the working of the function
+
+#### Per POS Performance
+
+![image](https://user-images.githubusercontent.com/89626355/203062382-037c16c0-d515-446f-b8df-f203aba44a0c.png)
+
+#### Overall Performance
+
 The observed overall parameters are:
 Precision = 96.02
 Recall = 96.05

@@ -8,6 +8,16 @@
 
 ## ________________________________DESCRIPTION________________________________
 
+## Library used are:
+1) Keras
+2) sklearn
+3) pandas
+4) Numpy 
+5) MatPlotLib
+6) seaborn
+7) tqdm
+8) gensim
+
 ## Part 1
 
 Given a sequence of words, produce the POS tag sequence  
